@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/*
+ * An Experiment
+ * by Anne Gray
+ * www.annegraydesign.com
+ */
+
+/* Color Scheme
+	Aqua - #2dc2d8
+    Darker Aqua - #17ACC2
+    Yellow - #f4e664
+    Off White - #F7F7F0
+	White - #ffffff
+    Lt Grey - #c5c5c5
+    Lt med grey - #858585
+	Med Grey - #4d4d4d
+	Charcoal - #1b1b1b
+*/
+
+/* Global */
+html, body { height: 100%; }
+body {
+	margin: 0;
+	line-height: 1.3;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #1b1b1b;
+	background-color: #ffffff;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+header,nav,section,footer,article,div{ position:relative; display:block; }
+
+/* Float Clearing */
+header:after, nav:after, section:after, footer:after, article:after, div:after { content: ''; display: table; clear: both; }
+
+/* Custom Highlight Color */
+::-moz-selection { background-color:#f4e664; color:#ffffff; }
+::selection { background-color:#f4e664; color:#ffffff; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 { margin: 0; color: #1b1b1b; font-weight: normal; font-family: 'Roboto Slab', serif; }
+h1 { font-size: 2.1em; font-weight: bold; text-align: center; color: #17ACC2; margin: 20px auto; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.3em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1.1em; }
+h6 { font-size: 1em; font-weight: bold; }
+
+/* Links */
+a, a:visited, a:active { color: #2dc2d8; text-decoration: none; -webkit-transition: .2s ease-out; -moz-transition: .2s ease-out; transition: .2s ease-out; }
+a:hover { opacity: .8; }
+
+/* Images */
+img { max-width: 100%; height: auto; }
+a img { border: 0; }
+p { margin: 10px auto; }
+hr { width: 100%; border: 0; border-top: 1px solid #f4e664; clear: both; }
+.icon { font-family: FontAwesome; }
+
+/* Layout */
+.inner { width: 90%; max-width: 1200px; margin: 0 auto; padding: 20px; box-sizing: border-box; }
+
+/* Custom Styles */
+header { z-index: 1; width: 100%; background-color: #17ACC2; color: #ffffff; text-align: center; box-shadow: 0 0 8px 0 rgba(0,0,0,.5); }
+header a, header a:visited, header a:active { display: inline-block; padding: 10px 15px; color: #ffffff; font-weight: bold; font-size: 1.1em; }
+header icon { font-size: 1.4em; }
+/* Icons */
+.social { margin: 0 auto; padding: 0; text-align: center; font-family: FontAwesome; font-size: 2.4em; }
+.social li { display: inline-block; list-style-type: none; padding: 4px 6px; }
+.social a, .social a:active, .social a:visited { color: #ffffff; font-weight: normal; }
+.social a:hover { opacity: .9; }
+
+/* Post Previews */
+.preview-box { text-align: center; }
+.post-preview {width: 100%; max-width: 320px; display: inline-block; vertical-align: top; margin: 10px 1%; padding: 10px; border: 1px solid #c5c5c5; box-sizing: border-box; box-shadow: 0 0 4px 0 rgba(0,0,0,.1); }
+.post-preview h2 { position: absolute; bottom: 0; right: 0; width: 100%; padding: 20px; box-sizing: border-box; color: #ffffff; background-color: rgba(0,0,0,.7); }
+.post-preview-date { color: #c5c5c5; font-style: italic; }
+.post-preview p { padding: 20px; box-sizing: border-box; }
+.post-preview img { display: block; margin: 10px auto; border-radius: 100%; border: 1px solid #c5c5c5; }
+.read-more { float: right; }
+
+/* Single Post View */
+.post { width: 90%; max-width: 750px; margin: 0 auto; }
+.post img { display: block; margin: 20px auto; }
+
+footer { background-color: #17ACC2; color: #ffffff; text-align: center; }
+footer a, footer a:visited, footer a:active { color: #ffffff; font-weight: bold; }
+
+/* Behavior */
+.content { -webkit-transition: .2s ease-out; -moz-transition: .2s ease-out; transition: .2s ease-out; }
+.fadein { opacity: 1; }
+.fadeout { opacity: 0; }
