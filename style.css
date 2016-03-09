@@ -84,10 +84,10 @@ header icon { font-size: 1.4em; }
 .post { width: 90%; max-width: 750px; margin: 0 auto; }
 .post img { display: block; margin: 20px auto; }
 
-footer { background-color: #17ACC2; color: #ffffff; text-align: center; }
+footer { display: none; background-color: #17ACC2; color: #ffffff; text-align: center; }
 footer a, footer a:visited, footer a:active { color: #ffffff; font-weight: bold; }
 
 /* Behavior */
-.content { -webkit-transition: .2s ease-out; -moz-transition: .2s ease-out; transition: .2s ease-out; }
+.content { opacity: 0; -webkit-transition: .2s ease-out; -moz-transition: .2s ease-out; transition: .2s ease-out; }
 .fadein { opacity: 1; }
 .fadeout { opacity: 0; }
